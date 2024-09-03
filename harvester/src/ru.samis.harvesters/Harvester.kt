@@ -16,6 +16,7 @@ import org.json.JSONObject
 import org.locationtech.jts.io.geojson.GeoJsonReader
 import java.io.File
 import java.io.FileWriter
+import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.*
@@ -274,6 +275,7 @@ abstract class Harvester : AutoCloseable {
 
     }
 
+    @kotlin.jvm.Throws(IOException::class, InterruptedException::class)
     protected abstract fun mainHarvest(): Int
 
     protected fun insertMetadata(datasetStructure: Array<Array<String>>) {

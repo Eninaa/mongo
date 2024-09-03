@@ -1,5 +1,7 @@
 package ru.samis.harvesters
 
+import ru.samis.harvesters.lands.LandHarvester
+import ru.samis.harvesters.oks.OksHarvester
 import com.mongodb.client.MongoClients
 import com.mongodb.client.MongoDatabase
 import org.bson.Document
@@ -8,13 +10,11 @@ import org.json.JSONObject
 import ru.samis.harvesters.configChecker.ConfigChecker
 import ru.samis.harvesters.land.IngeoHarvester
 import ru.samis.harvesters.land.PenzaHarvester
-import ru.samis.harvesters.lands.LandHarvester
-import ru.samis.harvesters.oks.OksHarvester
 import java.io.File
 import kotlin.system.exitProcess
 
-fun main(args: Array<String>) {
 
+fun main(args: Array<String>) {
     var time = -System.nanoTime()
 
 

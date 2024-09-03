@@ -1,1 +1,18 @@
-{"options":{"rawDatabase":"rk_common","rawDataset":"yandex_raw"},"params":{"ConnectionString":"mongodb:\/\/192.168.57.102:27017\/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false","database":"debug_region63_samarskaya_obl","RegionCode":"6300","dataset":"yandex_houses"}}
+{
+  "options": {
+    "reformagkhCatalog": "/home/rk_data/harvesters/reformagkh/",
+    "fullness": [
+      "Street",
+      "HouseNumber"
+    ]
+  },
+  "params": {
+    "ConnectionString": "mongodb://localhost:27017",
+    "database": "debug_region63_samarskaya_obl",
+    "RegionCode": "6300",
+    "dataset": "reformagkh_houses",
+    "regionGuid": "df3d7359-afa9-4aaa-8ff9-197e73906b1c"
+  }
+}
+
+
